@@ -36,7 +36,7 @@ body {
   color:#fff;
   color: rgb(255, 255, 255);
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  //text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -109,6 +109,39 @@ body {
   }
 }
 
+
+.navbar-default{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-brand{
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+}
+
+
+.navbar-default .navbar-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 20px; 
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+  background-color: transparent;
+  border-bottom-color: #333;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+}
+
+.main{
+  margin-top: 50px;
+}
 
 /*
  * Cover
