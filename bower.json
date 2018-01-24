@@ -30,7 +30,8 @@
     "angular-block-ui": "~0.2.1",
     "ngmap": "~1.18.1",
     "angular-jwt": "~0.1.9",
-    "angular-switcher": "0.2.7"
+    "angular-switcher": "0.2.7",
+    "vegas": "2.4.0"
   },
   "resolutions": {
     "angular": "~1.5.9"
