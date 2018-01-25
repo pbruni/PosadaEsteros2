@@ -45,7 +45,7 @@
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
           <ul class="nav navbar-nav navbar-right">
             <li class="active">
-              <a href="#opcion1">Lodge
+              <a class="toggle-visibility" data-target="#opcion1" href="#opcion1">Lodge
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -53,19 +53,19 @@
               <a href="#opcion2">Actividades</a>
             </li>
             <li>
-              <a href="opcion3">BirdWatching</a>
+              <a href="#opcion3">BirdWatching</a>
             </li>
             <li>
-              <a href="opcion4">Reserva Natural</a>
+              <a href="#opcion4">Reserva Natural</a>
             </li>
             <li>
-              <a href="opcion5">Prensa</a>
+              <a href="#opcion5">Prensa</a>
             </li>
             <li>
-              <a href="opcion6">Contacto</a>
+              <a href="#opcion6">Contacto</a>
             </li>
             <li>
-              <a href="opcion7">Cómo llegar</a>
+              <a href="#opcion7">Cómo llegar</a>
             </li>
           </ul>
         </div>
@@ -74,7 +74,7 @@
       <!--/.container-fluid -->
     </nav>
     <div class="main row">
-      <div id="opcion1" class="well well-lg col-xs-12 col-lg-8">
+      <div hidden id="opcion1" class="well well-lg col-xs-12 col-lg-8">
         <h2 style="text-align: left; font-weight:bold;">Lodge</h2>
         <p style="text-align: justify;">Los invitamos a conocer Posada de la Laguna, donde podrán disfrutar de una ubicación privilegiada en un jardín de 2 hectáreas con una espectacular vista a palmares y laguna con muelle propio sobre la laguna Ibera.</p>
         <p>
@@ -98,7 +98,31 @@
   <script src="/bower_components/vegas/dist/vegas.min.js"></script>
   <!-- endbuild -->
 
-  <script type="text/javascript">
+<script type="text/javascript">
+$(document).ready(function(){
+
+/* Button which shows and hides div with a id of "post-details" */
+$( ".toggle-visibility" ).click(function() {
+  
+  var target_selector = $(this).attr('data-target');
+  var $target = $( target_selector );
+  
+  if ($target.is(':hidden'))
+  {
+    $target.show( "slow" );
+  }
+  else
+  {
+  	$target.hide( "slow" );
+  }
+  
+  console.log($target.is(':visible'));
+
+  
+});
+});
+
+
     $("body").vegas({
       slides: [
         { src: "/img/Bote.jpg" },
