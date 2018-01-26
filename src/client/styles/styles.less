@@ -54,25 +54,37 @@ body {
   display: none;
 }
 
-.header{
-  width: 990px;
-  position: absolute;
-  left: 0;
-  text-align: center;
-  margin:0 auto;
-}
-
-.social{
+.social > li{
   padding-top: 15px;
+  margin-left: 10px;
+  float: left;
 }
 
-.social > a{
-  margin-right: 10px;
+.social > li > a:hover{
+  color: #86a22c;
 }
 
-.brand{
-  padding: 15px;
+.lang > li > a{
+  height: 11px;
+  width: 16px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  float: left; 
 }
+.lang a:hover{
+	background-position:bottom center;
+	}
+
+.lang a.active{
+	background-position:bottom center;
+	}	
+
+.navbar-brand{
+  font-family: 'GothamLight';
+  font-size: 25px;
+}
+
+
 
 .navbar-default{
   background-color: transparent;
@@ -81,13 +93,8 @@ body {
 
 .navbar-default .navbar-brand{
   color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
 }
 
-.navbar-header, .navbar-brand > img {
-  width: 200px;
-  text-align: center;
-}
 
 .navbar-default .navbar-nav > li > a {
   padding-right: 0;
@@ -97,22 +104,32 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 2px solid transparent;
   color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: #86a22c;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
   background-color: transparent;
   border-bottom-color: #333;
   color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
   background-color: transparent;
 }
 
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color:transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
 .dropdown-menu{
   background-color: transparent;
-  color: #333;
+  color: #fff;
   border: none;
   border-radius: 0;
   -webkit-box-shadow: 0;
