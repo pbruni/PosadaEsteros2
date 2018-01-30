@@ -90,24 +90,25 @@
   </header>
   <div class="container">
     <div class="main row">
-      <div hidden id="opcion1" class="col-xs-12 col-lg-8 pull-right texto">
+      <div hidden id="opcion1" class="col-xs-12 col-lg-8 texto">
         <h1 style="text-align: right; font-weight:bold;">Lodge</h1>
-        <p style="text-align: justify;">Los invitamos a conocer Posada de la Laguna, donde podrán disfrutar de una ubicación privilegiada en un jardín de
+        <p>Los invitamos a conocer Posada de la Laguna, donde podrán disfrutar de una ubicación privilegiada en un jardín de
           2 hectáreas con una espectacular vista a palmares y laguna con muelle propio sobre la laguna Ibera.</p>
         <p>
-          <!-- <a class="btn btn-default" href="#" role="button">View details »</a> -->
         </p>
         <div class="btns">
-          <a href="" class="btn" target="_blank">Dormitorios</a>
-          <a href="" class="btn" target="_blank">Restaurant</a>
+          
+          <a href="" class="btn" data-toggle="modal" data-target="#dormitoriosModal" target="_blank">Dormitorios</a>
+          <a href="" class="btn" data-toggle="modal" data-target="#restaurantModal"target="_blank">Restaurant</a>
         </div>
       </div>
-      <div hidden id="opcion2" class="well well-lg col-xs-12 col-lg-8">
-        <h2 style="text-align: left; font-weight:bold;">Actividades</h2>
-        <p style="text-align: justify;">Los invitamos a conocer Posada de la Laguna, donde podrán disfrutar de una ubicación privilegiada en un jardín de
-          2 hectáreas con una espectacular vista a palmares y laguna con muelle propio sobre la laguna Ibera.</p>
-        <p>
-          <!-- <a class="btn btn-default" href="#" role="button">View details »</a> -->
+      <div hidden id="opcion2" class="col-xs-12 col-lg-8 texto">
+        <h1 style="text-align: right; font-weight:bold;">Actividades</h1>
+        <p>Muchas y muy variadas son las actividades que podrás desarrollar en Posada de la Laguna. </p>
+          <p>
+            Mágicos paseos en lancha por la laguna Iberá de día o a la luz de las estrellas, caminatas inolvidables, paseos en canoa acompañado por el canto de los pájaros, diferentes cabalgatas atravesando esteros y palmares, o simplemente dedicarte a descansar en una hamaca paraguaya o al borde de la pileta.
+          </p> 
+          <p>Si sos amante de la flora y la fauna, este es el lugar ideal para visitar, seguramente lo que vas a ver superará todas tus expectativas. Si te apasiona la fotografía, que llevaras tomas insuperables, por el entorno inigualable y la cantidad de especies que habitan en los esteros
         </p>
       </div>
       <div hidden id="opcion3" class="well well-lg col-xs-12 col-lg-8">
@@ -172,6 +173,25 @@
     </div>
 
     </footer>
+    <div id="dormitoriosModal" class="modal fade" tabindex="-1" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+    </div>
 </body>
 
 
@@ -208,6 +228,16 @@
       }
 
     });
+
+    $('#dormitoriosModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget); // Button that triggered the modal
+  var recipient = button.data('whatever'); // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this);
+  modal.find('.modal-title').text('New message to ' + recipient);
+  modal.find('.modal-body input').val(recipient);
+  });
   });
 
 
@@ -224,6 +254,8 @@
       { src: "/images/PosadaNoche.jpg" }
     ]
   });
+
+
 </script>
 </body>
 
