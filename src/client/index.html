@@ -121,49 +121,57 @@
           <a href="" class="btn" data-toggle="modal" data-target="#actividad2Modal"target="_blank">Talleres</a>
         </div>
       </div>
-     
-    </div>
+     </div>
     
-    <div hidden id="opcion3" class="well well-lg col-xs-12 col-lg-8">
-        <h2 style="text-align: left; font-weight:bold;">BirdWatching</h2>
+    <div hidden id="opcion3" class="col-xs-12 col-lg-8 texto">
+        <h1 style="text-align: right; font-weight:bold;">BirdWatching</h1>
+        <p style="text-align: justify;"><strong>Javiru, Yetapa de collar, Cardenal Amarillo</strong>son algunas de las especies que podrá avistar en los paseos organizados por Posada de la Laguna para los birdwatchers que nos visitan, acompañados por un guía local especializado usted podrá observar mas de 300 especies</p>
+     </div>
+
+     <div hidden id="opcion4" class="col-xs-12 col-lg-8 texto">
+        <h1 style="text-align: right; font-weight:bold;">Reserva Natural</h1>
+        <p style="text-align: justify;">La vegetación acuática es frondosa y cubre extensas áreas. El camalote, es el género más extendido y conforma generalmente la base de los embalsados, junto con la amapola de agua, la ortiga acuática, el junco y las achiras o pehuajos. </p>
+    </div>
+
+    <div hidden id="opcion5" class="col-xs-12 col-lg-8 texto">
+        <h1 style="text-align: right; font-weight:bold;">Prensa</h1>
         <p style="text-align: justify;">Los invitamos a conocer Posada de la Laguna, donde podrán disfrutar de una ubicación privilegiada en un jardín de
           2 hectáreas con una espectacular vista a palmares y laguna con muelle propio sobre la laguna Ibera.</p>
-        <p>
-          <a class="btn btn-default" href="#" role="button">View details »</a>
-        </p>
-      </div>
-      <div hidden id="opcion4" class="well well-lg col-xs-12 col-lg-8">
-        <h2 style="text-align: left; font-weight:bold;">Reserva Natural</h2>
+    </div>
+
+    <div hidden id="opcion6" class="col-xs-12 col-lg-8 texto">
+        <h1 style="text-align: right; font-weight:bold;">Contacto</h1>
+       <form class="formulario2">
+          <div class="row">
+            <!-- <span>Nombre</span>  -->
+            <input type="text" class="campo" id="nombreInput" placeholder="Ingrese Nombre">
+          </div>
+            
+          <div class="row">
+            <!-- <span>Apellido</span>  -->
+            <input type="text" class="campo" id="apellidoInput" placeholder="Ingrese Apellido">
+          </div>
+
+          <div class="row">
+            <!-- <label for="email">Email</label> -->
+            <input type="email" class="campo" id="emailInput" placeholder="Ingrese Email">
+          </div>
+
+          <div class="row">
+              <!-- <span>Consulta</span>  -->
+            <textarea class="campo" id="consultaTextArea" placeholder="Ingrese consulta" rows="4"></textarea>
+         </div>
+         <div class="row">
+            <a href="" class="submitBtn" data-toggle="modal" data-target="#actividad2Modal"target="_blank">Enviar</a>
+         </div>
+         
+       </form>
+    </div>
+    <div hidden id="opcion7" class="col-xs-12 col-lg-8 texto">
+        <h1 style="text-align: right; font-weight:bold;">Cómo Llegar</h1>
         <p style="text-align: justify;">Los invitamos a conocer Posada de la Laguna, donde podrán disfrutar de una ubicación privilegiada en un jardín de
           2 hectáreas con una espectacular vista a palmares y laguna con muelle propio sobre la laguna Ibera.</p>
-        <p>
-          <a class="btn btn-default" href="#" role="button">View details »</a>
-        </p>
-      </div>
-      <div hidden id="opcion5" class="well well-lg col-xs-12 col-lg-8">
-        <h2 style="text-align: left; font-weight:bold;">Prensa</h2>
-        <p style="text-align: justify;">Los invitamos a conocer Posada de la Laguna, donde podrán disfrutar de una ubicación privilegiada en un jardín de
-          2 hectáreas con una espectacular vista a palmares y laguna con muelle propio sobre la laguna Ibera.</p>
-        <p>
-          <a class="btn btn-default" href="#" role="button">View details »</a>
-        </p>
-      </div>
-      <div hidden id="opcion6" class="well well-lg col-xs-12 col-lg-8">
-        <h2 style="text-align: left; font-weight:bold;">Contacto</h2>
-        <p style="text-align: justify;">Los invitamos a conocer Posada de la Laguna, donde podrán disfrutar de una ubicación privilegiada en un jardín de
-          2 hectáreas con una espectacular vista a palmares y laguna con muelle propio sobre la laguna Ibera.</p>
-        <p>
-          <a class="btn btn-default" href="#" role="button">View details »</a>
-        </p>
-      </div>
-      <div hidden id="opcion7" class="well well-lg col-xs-12 col-lg-8">
-        <h2 style="text-align: left; font-weight:bold;">Cómo Llegar</h2>
-        <p style="text-align: justify;">Los invitamos a conocer Posada de la Laguna, donde podrán disfrutar de una ubicación privilegiada en un jardín de
-          2 hectáreas con una espectacular vista a palmares y laguna con muelle propio sobre la laguna Ibera.</p>
-        <p>
-          <a class="btn btn-default" href="#" role="button">View details »</a>
-        </p>
-      </div>
+    </div>
       <!--/.col-xs-6.col-lg-4-->
 
     </div>
@@ -188,20 +196,20 @@
     </footer>
     <div id="dormitoriosModal" class="modal fade" tabindex="-1" >
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div style="background-image:'/images/slider_5.png'" class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Dormitorios</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                ...
+                <p>Contamos con bellos dormitorios</p>
               </div>
-              <div class="modal-footer">
+              <!-- <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
+              </div> -->
             </div>
           </div>
     </div>
@@ -244,12 +252,10 @@
 
     $('#dormitoriosModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget); // Button that triggered the modal
-  var recipient = button.data('whatever'); // Extract info from data-* attributes
+  //var recipient = button.data('whatever'); // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this);
-  modal.find('.modal-title').text('New message to ' + recipient);
-  modal.find('.modal-body input').val(recipient);
+  //var modal = $(this);
   });
   });
 

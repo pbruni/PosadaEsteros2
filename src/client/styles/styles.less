@@ -296,12 +296,78 @@ a {
   outline: none;
 }
 
-.btn:hover {
-background-color: #6ad87ede;
+
+.formulario2{
+	float:right;
+	text-align:left;
+	color:#000;
+	font-size:12px;
+	margin:55px 0 0 0;
+	}
+
+.formulario2 .campo{
+	font-family: Arial, Helvetica, sans-serif;
+	/*font-family: 'GothamBook';*/
+	font-size: 10pt;
+	border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+	text-decoration: none;
+	padding: 4px;
+	margin:3px 15px 5px 0;
+	width:320px;
+	border:1px solid #fff;
+	background-color:rgba(180, 148, 148, 0.925);
+  }
+
+  .formulario2 span{
+    color:#FFF;
+    font-size: 10pt;
+    }	
+  
+    .formulario2 input[type=email]:focusinput[type=text]:focus, input[type=password]:focus, input[type=file]:focus, textarea:focus, select:focus, option:hover, option:focus{
+    border:1px solid #e8b94f;
+    color:#fff;
+    }	
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: rgb(253, 252, 252);
+      opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+         color: rgb(253, 252, 252);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(253, 252, 252);
+  }
+
+  
+.submitBtn {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: 'GothamBook'; */
+  text-transform: uppercase;
+  font-size: 10pt;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  padding-top:5px;
+  border: 1px solid rgb(238, 231, 234);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: color .5s linear, background-color .5s ease-in-out;
+  -moz-transition: color .5s linear, background-color .5s ease-in-out;
+  -o-transition: color .5s linear, background-color .5s ease-in-out;
+  transition: color .5s linear, background-color .5s ease-in-out;
+}
+
+.submitBtn:hover {
+background-color: #c5819cde;
 -webkit-transition: background-color .25s ease-in-out;
 -moz-transition: background-color .25s ease-in-out;
 -o-transition: background-color .25s ease-in-out;
 transition: background-color .25s ease-in-out;
 border:1px solid #777776af;
 }
-
