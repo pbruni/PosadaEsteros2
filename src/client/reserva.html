@@ -150,27 +150,7 @@
 <script type="text/javascript">
   $(document).ready(function () {
 
-    $(".toggle-visibility").click(function () {
-
-      /*Esto debería mejorarse. Lo hago así para hacer rapido*/
-      $("#opcion1").hide();
-      $("#opcion2").hide();
-      $("#opcion3").hide();
-      $("#opcion4").hide();
-      $("#opcion5").hide();
-      $("#opcion6").hide();
-      $("#opcion7").hide();
-
-      var target_selector = $(this).attr('data-target');
-      var $target = $(target_selector);
-
-      if ($target.is(':hidden')) {
-        $target.show("slow");
-      } else {
-        $target.hide("slow");
-      }
-
-    });
+    
 
     function centerModal() {
     $(this).css('display', 'block');
@@ -186,10 +166,10 @@
 
   $("body").vegas({
     slides: [{
-        src: "/images/slider_9.png"
+        src: "/images/reserva1.jpg"
       },
       {
-        src: "/images/slider_2.jpg"
+        src: "/images/AveB.jpg"
       },
       {
         src: "/images/slider_4.png"
