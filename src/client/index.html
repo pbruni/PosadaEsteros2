@@ -28,7 +28,7 @@
         <i class="fa fa-globe fa-2x"></i>
       </div>
       <div class="logo">
-        <a href="#">
+        <a href="index.html">
           <img class="" src="/images/logo.png" alt="Posada de la Laguna">
         </a>
       </div>
@@ -89,28 +89,7 @@
   </nav>
 
 
-  <!-- <nav id="menu" class="panel hidden-lg" role="navigation">
-    <ul>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">The Ballad of El Goodo</a>
-      </li>
-      <li>
-        <a href="#">Thirteen</a>
-      </li>
-      <li>
-        <a href="#">September Gurls</a>
-      </li>
-      <li>
-        <a href="#">What's Going Ahn</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="clearfix"></div> -->
-
-<div class="container">
+  <div class="container">
    <div class="row">
       <div hidden id="opcion1" class="col-xs-12 col-lg-8 texto">
         <h1 style="text-align: right; font-weight:bold;">Lodge</h1>
@@ -241,16 +220,6 @@
     </div>
   </footer>
 
-
-  <div id="dormitoriosModal" class="modal fade" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-body">
-              <img src="images/living_1.jpg" class="img-responsive">
-            </div>
-      </div>
-      </div>
-    </div>
   </div>
 </body>
 
@@ -264,43 +233,7 @@
 <!-- endbuild -->
 
 <script type="text/javascript">
-  $(document).ready(function () {
-
-    $(".toggle-visibility").click(function () {
-
-      /*Esto debería mejorarse. Lo hago así para hacer rapido*/
-      $("#opcion1").hide();
-      $("#opcion2").hide();
-      $("#opcion3").hide();
-      $("#opcion4").hide();
-      $("#opcion5").hide();
-      $("#opcion6").hide();
-      $("#opcion7").hide();
-
-      var target_selector = $(this).attr('data-target');
-      var $target = $(target_selector);
-
-      if ($target.is(':hidden')) {
-        $target.show("slow");
-      } else {
-        $target.hide("slow");
-      }
-
-    });
-
-    function centerModal() {
-    $(this).css('display', 'block');
-    var $dialog = $(this).find(".modal-dialog");
-    var offset = ($(window).height() - $dialog.height()) / 2;
-    // Center modal vertically in window
-    $dialog.css("margin-top", offset);
-    }
-
-   
-  });
-
-
-  $("body").vegas({
+   $("body").vegas({
     slides: [{
         src: "/images/slider_9.png"
       },
