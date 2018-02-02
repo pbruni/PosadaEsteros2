@@ -29,93 +29,145 @@
 </head>
 
 <body>
-
-  <header class="header visible-lg">
-    <div class="header-container">
-      <div class="lang">
-        <i class="fa fa-globe fa-2x"></i>
+  <!-- Header from desktop -->
+  <section class="visible-lg">
+    <div class="header">
+      <div class="header-container">
+        <div class="lang">
+          <i class="fa fa-globe fa-2x"></i>
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img class="" src="/images/logo.png" alt="Posada de la Laguna">
+          </a>
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="">
+                <i class="fa fa-facebook fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-instagram fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-tripadvisor fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="logo">
+    </div>
+
+    <nav class="menu navbar navbar-default">
+      <div class="container">
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a class="toggle-visibility" data-target="#opcion1" href="#opcion1">Lodge
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li>
+              <a class="toggle-visibility" data-target="#opcion2" href="#opcion2">Actividades</a>
+            </li>
+            <li>
+              <a class="toggle-visibility" data-target="#opcion3" href="#opcion3">BirdWatching</a>
+            </li>
+            <li>
+              <a class="toggle-visibility" data-target="#opcion4" href="#opcion4">Reserva Natural</a>
+            </li>
+            <li>
+              <a class="toggle-visibility" data-target="#opcion5" href="#opcion5">Prensa</a>
+            </li>
+            <li>
+              <a class="toggle-visibility" data-target="#opcion6" href="#opcion6">Contacto</a>
+            </li>
+            <li>
+              <a class="toggle-visibility" data-target="#opcion7" href="#opcion7">Cómo llegar</a>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+    </nav>
+  </section>
+
+  <!-- Header for mobile -->
+  <section class="hidden-lg">
+    <div class="header">
+      <a href="#nav-lang" class="nav-lang">
+          <i class="fa fa-globe"></i>
+      </a>
+      <div class="nav-logo">
         <a href="#">
-          <img class="" src="/images/logo.png" alt="Posada de la Laguna">
+            <img class="" src="/images/logo.png" alt="Posada de la Laguna">
         </a>
       </div>
-      <div class="social">
-        <ul>
-          <li>
-            <a href="">
-              <i class="fa fa-facebook fa-2x"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fa fa-instagram fa-2x"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fa fa-tripadvisor fa-2x"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <a href="#nav-site" class="nav-site">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-  </header>
-  <nav class="menu navbar navbar-default">
-    <div class="container">
 
-      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-        <ul class="nav navbar-nav">
-          <li class="active">
-            <a class="toggle-visibility" data-target="#opcion1" href="#opcion1">Lodge
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li>
-            <a class="toggle-visibility" data-target="#opcion2" href="#opcion2">Actividades</a>
-          </li>
-          <li>
-            <a class="toggle-visibility" data-target="#opcion3" href="#opcion3">BirdWatching</a>
-          </li>
-          <li>
-            <a class="toggle-visibility" data-target="#opcion4" href="#opcion4">Reserva Natural</a>
-          </li>
-          <li>
-            <a class="toggle-visibility" data-target="#opcion5" href="#opcion5">Prensa</a>
-          </li>
-          <li>
-            <a class="toggle-visibility" data-target="#opcion6" href="#opcion6">Contacto</a>
-          </li>
-          <li>
-            <a class="toggle-visibility" data-target="#opcion7" href="#opcion7">Cómo llegar</a>
-          </li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-    <!--/.container-fluid -->
-  </nav>
+    <nav id="nav-lang" class="menu-lang" role="navigation">
+      <a href="#" class="bt-volver">
+        <span class="fa fa-chevron-right"></span>
+        <p>VOLVER</p>
+      </a>
+      <a href="#menu2" class="">
+        <i class="fa fa-globe fa-2x"></i>
+      </a>
+      <ul style="height: 567px;">
+        <li>
+          <a href="#">ES</a>
+        </li>
+        <li>
+          <a href="#">EN</a>
+        </li>
+        <li>
+          <a href="#">P</a>
+        </li>
+      </ul>
+    </nav>
 
-
-  <nav id="menu" class="panel hidden-lg" role="navigation">
-    <ul>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">The Ballad of El Goodo</a>
-      </li>
-      <li>
-        <a href="#">Thirteen</a>
-      </li>
-      <li>
-        <a href="#">September Gurls</a>
-      </li>
-      <li>
-        <a href="#">What's Going Ahn</a>
-      </li>
-    </ul>
-  </nav>
+    <nav id="nav-site" class="menu-site" role="navigation">
+      <a href="index.php" class="bt-volver">
+        <span class="fa fa-chevron-left"></span>
+        <p>VOLVER</p>
+      </a>
+      <a href="#menu" class="menu-link verde">
+        <span class="fa fa-bars"></span>
+      </a>
+      <ul>
+        <li>
+          <a href="#">Lodge</a>
+        </li>
+        <li>
+          <a href="#">Actividades</a>
+        </li>
+        <li>
+          <a href="#">BirdWatching</a>
+        </li>
+        <li>
+          <a href="#">Reserva Natural</a>
+        </li>
+        <li>
+          <a href="#">Prensa</a>
+        </li>
+        <li>
+          <a href="#">Contacto</a>
+        </li>
+        <li>
+          <a href="#">Cómo llegar</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
 
   <div class="container">
     <div class="main row">
@@ -274,6 +326,7 @@
 <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/bower_components/ie10-viewport-bug-workaround/dist/ie10-viewport-bug-workaround.js"></script>
 <script src="/bower_components/vegas/dist/vegas.min.js"></script>
+<script src="/bower_components/bigSlide/dist/bigSlide.min.js"></script>
 <!-- endbuild -->
 
 <script type="text/javascript">
@@ -308,6 +361,19 @@
       // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
       //var modal = $(this);
     });
+
+    $('.nav-lang').bigSlide({
+      'menu': ('#nav-lang'),
+      side: "left",
+      easyClose: true
+    });
+
+    $('.nav-site').bigSlide({
+      'menu': ('#nav-site'),
+      side: "right",
+      easyClose: true
+    });
+
   });
 
 
