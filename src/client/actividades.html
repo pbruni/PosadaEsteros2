@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Posada de La Laguna</title>
+
+  <!-- build:css styles/lib.css -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/bower_components/ie10-viewport-bug-workaround/dist/ie10-viewport-bug-workaround.css">
+  <link rel="stylesheet" href="/bower_components/vegas/dist/vegas.min.css">
+  <!-- endbuild -->
+
+  <!-- build:css styles/app.css -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/.tmp/styles.css">
+  <!-- endinject -->
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <header class="header visible-lg">
+    <div class="header-container">
+      <div class="lang">
+        <i class="fa fa-globe fa-2x"></i>
+      </div>
+      <div class="logo">
+          <a href="index.html">
+            <img class="" src="/images/logo.png" alt="Posada de la Laguna">
+          </a>
+        </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="">
+              <i class="fa fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-tripadvisor fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <nav class="menu navbar navbar-default">
+    <div class="container">
+
+      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                    <li>
+                      <a href="lodge.html">Lodge
+                        <!-- <span class="sr-only">(current)</span> -->
+                      </a>
+                    </li>
+                    <li>
+                      <a  href="actividades.html">Actividades</a>
+                    </li>
+                    <li>
+                      <a  href="birdwatching.html">BirdWatching</a>
+                    </li>
+                    <li>
+                      <a  href="reserva.html">Reserva Natural</a>
+                    </li>
+                    <li>
+                      <a  href="prensa.html">Prensa</a>
+                    </li>
+                    <li>
+                      <a  href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                      <a  href="indicaciones.html">Cómo llegar</a>
+                    </li>
+                  </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+
+<div class="container">
+  <div class="row col-xs-12 col-lg-12">
+      <div class="col-xs-6 col-lg-6 align-items-center" style="left:200px;padding-top:30px;">
+          
+          <a href="" class="btn" data-toggle="modal" data-target="#actividad1Modal" target="_blank">Cabalgatas</a>
+          <br>
+          <br>
+          <a href="" class="btn" data-toggle="modal" data-target="#actividad2Modal" target="_blank">Night Watching</a>
+          <br>
+          <br>
+          <a href="" class="btn" data-toggle="modal" data-target="#actividad2Modal" target="_blank">Talleres</a>
+      </div>
+
+        <div class="col-xs-6 col-lg-6 texto" style="left:40px">
+          <h1 style="text-align: right; font-weight:bold;">Actividades</h1>
+          <p>Muchas y muy variadas son las actividades que podrás desarrollar en Posada de la Laguna. </p>
+          <p>
+            Mágicos paseos en lancha por la laguna Iberá de día o a la luz de las estrellas, caminatas inolvidables, paseos en canoa
+            acompañado por el canto de los pájaros, diferentes cabalgatas atravesando esteros y palmares, o simplemente dedicarte
+            a descansar en una hamaca paraguaya o al borde de la pileta.
+          </p>
+          <p>Si sos amante de la flora y la fauna, este es el lugar ideal para visitar, seguramente lo que vas a ver superará
+            todas tus expectativas. Si te apasiona la fotografía, que llevaras tomas insuperables, por el entorno inigualable
+            y la cantidad de especies que habitan en los esteros
+          </p>
+        </div>
+  </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <h4>TEL +549 11 3317/ 4858/+549 3773 408166/+54 3773 499413.</h4>
+      <a href="http://">reservas@esterosdelibera.com</a>
+    </div>
+  </footer>
+
+
+  <!-- <div id="dormitoriosModal" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-body">
+              <img src="images/living_1.jpg" class="img-responsive">
+            </div>
+      </div>
+      </div>
+    </div> -->
+  </div>
+</body>
+
+
+
+<!-- build:js js/lib.js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/ie10-viewport-bug-workaround/dist/ie10-viewport-bug-workaround.js"></script>
+<script src="/bower_components/vegas/dist/vegas.min.js"></script>
+<!-- endbuild -->
+
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    //$(".toggle-visibility").click(function () {
+
+      /*Esto debería mejorarse. Lo hago así para hacer rapido*/
+      /*$("#opcion1").hide();
+      $("#opcion2").hide();
+      $("#opcion3").hide();
+      $("#opcion4").hide();
+      $("#opcion5").hide();
+      $("#opcion6").hide();
+      $("#opcion7").hide();
+
+      var target_selector = $(this).attr('data-target');
+      var $target = $(target_selector);
+
+      if ($target.is(':hidden')) {
+        $target.show("slow");
+      } else {
+        $target.hide("slow");
+      }
+
+    });*/
+
+    function centerModal() {
+    $(this).css('display', 'block');
+    var $dialog = $(this).find(".modal-dialog");
+    var offset = ($(window).height() - $dialog.height()) / 2;
+    // Center modal vertically in window
+    $dialog.css("margin-top", offset);
+    }
+
+   
+  });
+
+
+  $("body").vegas({
+    slides: [{
+        src: "/images/Actividad.jpg"
+      },
+      {
+        src: "/images/agua.jpg"
+      },
+      {
+        src: "/images/actividad2.jpg"
+      },
+      {
+        src: "/images/actividad3.jpg"
+      },
+      {
+        src: "/images/actividad4.jpg"
+      },
+      {
+        src: "/images/actividad5.jpg"
+      },
+      {
+        src: "/images/actividad6.jpg"
+      },
+      {
+        src: "/images/slider_8.jpg"
+      },
+      {
+        src: "/images/PosadaNoche.jpg"
+      }
+    ]
+  });
+
+</script>
+</body>
+
+</html>

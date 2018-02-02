@@ -16,20 +16,8 @@
     };
 
     return {
-      authenticate: authenticate
     };
 
-    function authenticate(name, password, callback) {
-      var request = $http({
-        method: httpMethod.POST,
-        url: appConfig.apiLogIn,
-        data: {
-          name: name,
-          password: password
-        }
-      });
-      return (request.then(handleSuccess, handleError));
-    }
 
     function handleError(response) {
       if (!angular.isObject(response.data) ||

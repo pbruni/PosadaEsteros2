@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Posada de La Laguna</title>
+
+  <!-- build:css styles/lib.css -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/bower_components/ie10-viewport-bug-workaround/dist/ie10-viewport-bug-workaround.css">
+  <link rel="stylesheet" href="/bower_components/vegas/dist/vegas.min.css">
+  <!-- endbuild -->
+
+  <!-- build:css styles/app.css -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/.tmp/styles.css">
+  <!-- endinject -->
+  <!-- endbuild -->
+
+</head>
+<body>
+  <header class="header visible-lg">
+    <div class="header-container">
+      <div class="lang">
+        <i class="fa fa-globe fa-2x"></i>
+      </div>
+      <div class="logo">
+          <a href="index.html">
+            <img class="" src="/images/logo.png" alt="Posada de la Laguna">
+          </a>
+        </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="">
+              <i class="fa fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-tripadvisor fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <nav class="menu navbar navbar-default">
+    <div class="container">
+
+      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                    <li>
+                      <a href="lodge.html">Lodge
+                        <!-- <span class="sr-only">(current)</span> -->
+                      </a>
+                    </li>
+                    <li>
+                      <a  href="actividades.html">Actividades</a>
+                    </li>
+                    <li>
+                      <a  href="birdwatching.html">BirdWatching</a>
+                    </li>
+                    <li>
+                      <a  href="reserva.html">Reserva Natural</a>
+                    </li>
+                    <li>
+                      <a  href="prensa.html">Prensa</a>
+                    </li>
+                    <li>
+                      <a  href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                      <a  href="indicaciones.html">Cómo llegar</a>
+                    </li>
+                  </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+
+
+  <!-- <nav id="menu" class="panel hidden-lg" role="navigation">
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">The Ballad of El Goodo</a>
+      </li>
+      <li>
+        <a href="#">Thirteen</a>
+      </li>
+      <li>
+        <a href="#">September Gurls</a>
+      </li>
+      <li>
+        <a href="#">What's Going Ahn</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="clearfix"></div> -->
+
+<div class="container">
+   <div class="row">
+      <div id="opcion4" class="col-xs-12 col-lg-8 texto">
+          <h1 style="text-align: right; font-weight:bold;">Reserva Natural</h1>
+          <p style="text-align: justify;">La vegetación acuática es frondosa y cubre extensas áreas. El camalote, es el género más extendido y conforma generalmente
+            la base de los embalsados, junto con la amapola de agua, la ortiga acuática, el junco y las achiras o pehuajos.
+          </p>
+        </div>
+  </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <h4>TEL +549 11 3317/ 4858/+549 3773 408166/+54 3773 499413.</h4>
+      <a href="http://">reservas@esterosdelibera.com</a>
+    </div>
+  </footer>
+
+  <div id="dormitoriosModal" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-body">
+              <img src="images/living_1.jpg" class="img-responsive">
+            </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+<!-- build:js js/lib.js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/ie10-viewport-bug-workaround/dist/ie10-viewport-bug-workaround.js"></script>
+<script src="/bower_components/vegas/dist/vegas.min.js"></script>
+<!-- endbuild -->
+
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    
+
+    function centerModal() {
+    $(this).css('display', 'block');
+    var $dialog = $(this).find(".modal-dialog");
+    var offset = ($(window).height() - $dialog.height()) / 2;
+    // Center modal vertically in window
+    $dialog.css("margin-top", offset);
+    }
+
+   
+  });
+
+
+  $("body").vegas({
+    slides: [{
+        src: "/images/reserva1.jpg"
+      },
+      {
+        src: "/images/AveB.jpg"
+      },
+      {
+        src: "/images/reserva4.jpg"
+      },
+      {
+        src: "/images/reserva3.jpg"
+      },
+      {
+        src: "/images/carpinchoInsta.jpg"
+      },
+      {
+        src: "/images/reserva4.png"
+      },
+      {
+        src: "/images/Ave2.jpg"
+      },
+      {
+        src: "/images/slider_8.jpg"
+      },
+      {
+        src: "/images/PosadaNoche.jpg"
+      }
+    ]
+  });
+
+</script>
+</body>
+
+</html>

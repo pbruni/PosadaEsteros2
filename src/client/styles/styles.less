@@ -44,6 +44,7 @@ body {
   // -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
   // box-shadow: inset 0 0 100px rgba(0,0,0,.5);
   background-color: #000000;
+  color: #fff;
 }
 
 .vegas-timer{
@@ -97,6 +98,7 @@ body {
   float: left;
   margin-left: 20px;
 }
+
 
 .menu{
   margin-top: 98px;
@@ -172,9 +174,80 @@ body {
   background-color: transparent;
 }
 
+.menu-lang{
+  background-image: url(http://www.teaconnection.com.ar/m/images/backslideinv.png);
+  background-position: 0 0;
+  background-repeat: repeat-y;
+}
+
+.menu-site {
+  background-image: url(http://teaconnection.com.ar/m/images/backslide.png);
+  background-position: 0 0;
+  background-repeat: repeat-y;
+}
+
+.menu-mobile{
+  position: fixed;
+
+  width: 15.625em; /*should match the above value*/
+}
+
+.menu-mobile > ul{
+  float: left;
+  width: 100%;
+  margin-top: 40%;
+  overflow: scroll;
+  margin-bottom: 50px;
+}
+
+.menu-mobile > ul > li > a{
+  float: left;
+  width: 180px;
+  margin-left: 30px;
+}
+
+.menu-link{
+  float: left;
+  width: 100%;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  border-bottom: 2px solid #ccc;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.nav-lang{
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.nav-logo{
+  float: left;
+  width: 75%;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.nav-logo > a > img{
+  width: 100%;
+}
+
+.nav-site{
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
 .main{
-  margin-top: 50px;
+  margin-top: 100px;
   height: 80%;
+}
+
+.main-mobile{
+  margin-top: 100px;
+  height: 80%;
+  margin-bottom: 60px;
 }
 
 .center-block {
@@ -209,19 +282,41 @@ body {
     width: 725px;
 }
 
+.footer-mobile{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fdfdfd;
+  height: 50px;
+  z-index: 100;
+}
 
+.social-mobile ul {
+  width: 235px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.social-mobile ul > li{
+  float: left;
+  margin-left: 25px;
+}
+
+.social-mobile ul > li > a{
+  color: #b4b4b4;
+}
 
 .texto{
 	text-align:right;
 	width:500px;
-	position:absolute;
+	margin-top:10px;
 	left: 630px;
-	top: 110px;
+	
 	}
 	
 .texto p{
 	text-align:right;
-	color:#8c8c8c;
+	color:white;
 	font-size:12pt;
 	line-height:18pt;
 	font-family: Arial, Helvetica, sans-serif;
@@ -363,3 +458,7 @@ a {
     color: rgb(253, 252, 252);
   }
 
+  .thumbnail{
+    background: transparent;
+    border-color: transparent;
+  }

@@ -2,9 +2,8 @@
   'use strict';
 
   angular
-    .module('app.core', [
-      'ngAnimate', 'ngSanitize',
+    .module('app.core', ['ngSanitize',
       'blocks.exception', 'blocks.logger', 'blocks.router',
-      'ui.router', 'ngplus', 'angular-jwt'
+      'ui.router'
     ]);
 })();
