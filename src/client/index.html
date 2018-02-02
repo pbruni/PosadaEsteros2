@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <base href="/">
   <title>Posada de La Laguna</title>
 
   <!-- build:css styles/lib.css -->
@@ -30,7 +32,7 @@
           <i class="fa fa-globe fa-2x"></i>
         </div>
         <div class="logo">
-          <a href="#">
+          <a ui-sref="home" href="#/home">
             <img class="" src="/images/logo.png" alt="Posada de la Laguna">
           </a>
         </div>
@@ -59,31 +61,34 @@
     <nav class="menu navbar navbar-default">
       <div class="container">
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-            <ul class="nav navbar-nav">
-                <li>
-                  <a href="lodge.html">Lodge
-                    <!-- <span class="sr-only">(current)</span> -->
-                  </a>
-                </li>
-                <li>
-                  <a  href="actividades.html">Actividades</a>
-                </li>
-                <li>
-                  <a  href="birdwatching.html">BirdWatching</a>
-                </li>
-                <li>
-                  <a  href="reserva.html">Reserva Natural</a>
-                </li>
-                <li>
-                  <a  href="prensa.html">Prensa</a>
-                </li>
-                <li>
-                  <a  href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                  <a  href="indicaciones.html">Cómo llegar</a>
-                </li>
-              </ul>
+          <ul class="nav navbar-nav">
+            <li>
+              <a ui-sref="lodge" href="#/lodge">Lodge</a>
+            </li>
+            <li>
+              <a ui-sref="actividades" href="#/actividades">
+                Actividades
+              </a>
+            </li>
+            <li>
+              <a ui-sref="birdwatching" href="#/birdwatching">BirdWatching</a>
+            </li>
+            <li>
+              <a ui-sref="reserva" href="#/reserva">
+                Reserva Natural</a>
+            </li>
+            <li>
+              <a ui-sref="prensa" href="#/prensa">Prensa</a>
+            </li>
+            <li>
+              <a ui-sref="contacto" href="#/contacto">
+                Contacto</a>
+            </li>
+            <li>
+              <a ui-sref="indicaciones" href="#/indicaciones">
+                Cómo llegar</a>
+            </li>
+          </ul>
         </div>
         <!--/.nav-collapse -->
       </div>
@@ -95,11 +100,11 @@
   <section class="hidden-lg">
     <div class="header">
       <a href="#nav-lang" class="nav-lang">
-          <i class="fa fa-globe fa-2x"></i>
+        <i class="fa fa-globe fa-2x"></i>
       </a>
       <div class="nav-logo">
-        <a href="#">
-            <img class="" src="/images/logo.png" alt="Posada de la Laguna">
+        <a ui-sref="home" href="#/home">
+          <img class="" src="/images/logo.png" alt="Posada de la Laguna">
         </a>
       </div>
       <a href="#nav-site" class="nav-site">
@@ -110,13 +115,19 @@
     <nav id="nav-lang" class="menu-mobile menu-lang" role="navigation">
       <ul>
         <li>
-          <a href="#"><p class="menu-link">SPANISH</p></a>
+          <a href="#">
+            <p class="menu-link">SPANISH</p>
+          </a>
         </li>
         <li>
-          <a href="#"><p class="menu-link">ENGLISH</p></a>
+          <a href="#">
+            <p class="menu-link">ENGLISH</p>
+          </a>
         </li>
         <li>
-          <a href="#"><p class="menu-link">PORTUGUESE</p></a>
+          <a href="#">
+            <p class="menu-link">PORTUGUESE</p>
+          </a>
         </li>
       </ul>
     </nav>
@@ -124,207 +135,180 @@
     <nav id="nav-site" class="menu-mobile menu-site" role="navigation">
       <ul>
         <li>
-          <a href="#"><p class="menu-link">Lodge</p></a>
+          <a ui-sref="lodge" href="#/lodge">
+            <p class="menu-link">Lodge</p>
+          </a>
         </li>
         <li>
-          <a href="#"><p class="menu-link">Actividades</p></a>
+          <a ui-sref="actividades" href="#/actividades">
+            <p class="menu-link">Actividades</p>
+          </a>
         </li>
         <li>
-          <a href="#"><p class="menu-link">BirdWatching</p></a>
+          <a ui-sref="birdwatching" href="#/birdwatching">
+            <p class="menu-link">BirdWatching</p>
+          </a>
         </li>
         <li>
-          <a href="#"><p class="menu-link">Reserva Natural</p></a>
+          <a ui-sref="reserva" href="#/reserva">
+            <p class="menu-link">Reserva Natural</p>
+          </a>
         </li>
         <li>
-          <a href="#"><p class="menu-link">Prensa</p></a>
+          <a ui-sref="prensa" href="#/prensa">
+            <p class="menu-link">Prensa</p>
+          </a>
         </li>
         <li>
-          <a href="#"><p class="menu-link">Contacto</p></a>
+          <a ui-sref="contacto" href="#/contacto">
+            <p class="menu-link">Contacto</p>
+          </a>
         </li>
         <li>
-          <a href="#"><p class="menu-link">Cómo llegar</p></a>
+          <a ui-sref="indicaciones" href="#/indicaciones">
+            <p class="menu-link">Cómo llegar</p>
+          </a>
         </li>
       </ul>
     </nav>
   </section>
 
-  <div class="container">
-   <div class="row">
-      <div hidden id="opcion1" class="col-xs-12 col-lg-8 texto">
-        <h1 style="text-align: right; font-weight:bold;">Lodge</h1>
-        <p>Los invitamos a conocer Posada de la Laguna, donde podrán disfrutar de una ubicación privilegiada en un jardín de
-          2 hectáreas con una espectacular vista a palmares y laguna con muelle propio sobre la laguna Ibera.</p>
-        <p>
-        </p>
-        <div class="btns">
+  <div class="main container visible-lg" ui-view>
 
-          <a href="" class="btn" data-toggle="modal" data-target="#dormitoriosModal" target="_blank">Dormitorios</a>
-          <a href="" class="btn" data-toggle="modal" data-target="#restaurantModal" target="_blank">Restaurant</a>
-        </div>
-      </div>
   </div>
-      <div hidden id="opcion2" class="row">
-        <div class="col-xs-6 col-lg-6 texto">
-          <h1 style="text-align: right; font-weight:bold;">Actividades</h1>
-          <p>Muchas y muy variadas son las actividades que podrás desarrollar en Posada de la Laguna. </p>
-          <p>
-            Mágicos paseos en lancha por la laguna Iberá de día o a la luz de las estrellas, caminatas inolvidables, paseos en canoa
-            acompañado por el canto de los pájaros, diferentes cabalgatas atravesando esteros y palmares, o simplemente dedicarte
-            a descansar en una hamaca paraguaya o al borde de la pileta.
-          </p>
-          <p>Si sos amante de la flora y la fauna, este es el lugar ideal para visitar, seguramente lo que vas a ver superará
-            todas tus expectativas. Si te apasiona la fotografía, que llevaras tomas insuperables, por el entorno inigualable
-            y la cantidad de especies que habitan en los esteros
-          </p>
-        </div>
-        <div class="col-xs-6 col-lg-6">
-          <div class="btnsLeft">
-            <a href="" class="btn" data-toggle="modal" data-target="#actividad1Modal" target="_blank">Cabalgatas</a>
-            <br>
-            <br>
-            <a href="" class="btn" data-toggle="modal" data-target="#actividad2Modal" target="_blank">Night Watching</a>
-            <br>
-            <br>
-            <a href="" class="btn" data-toggle="modal" data-target="#actividad2Modal" target="_blank">Talleres</a>
-          </div>
-        </div>
-      </div>
 
-      <div hidden id="opcion3" class="col-xs-12 col-lg-8 texto">
-        <h1 style="text-align: right; font-weight:bold;">BirdWatching</h1>
-        <p style="text-align: justify;">
-          <strong>Javiru, Yetapa de collar, Cardenal Amarillo </strong>son algunas de las especies que podrá avistar en los paseos
-          organizados por Posada de la Laguna para los birdwatchers que nos visitan, acompañados por un guía local especializado
-          usted podrá observar mas de 300 especies</p>
-      </div>
+  <div class="main-mobile shrink container hidden-lg" ui-view>
 
-      <div hidden id="opcion4" class="col-xs-12 col-lg-8 texto">
-        <h1 style="text-align: right; font-weight:bold;">Reserva Natural</h1>
-        <p style="text-align: justify;">La vegetación acuática es frondosa y cubre extensas áreas. El camalote, es el género más extendido y conforma generalmente
-          la base de los embalsados, junto con la amapola de agua, la ortiga acuática, el junco y las achiras o pehuajos.
-        </p>
-      </div>
-
-      <div hidden id="opcion5" class="row col-xs-12 col-lg-12">
-        <h1 style="text-align:left; font-weight:bold;">Prensa</h1>
-        <h2 style="text-align:left; font-weight:bold;">La Posada en los Medios</h2>
-        <div class="col-xs-4 col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="/images/revistaLugares.jpg" alt="Card image cap">
-            <div class="card-block">
-              <h4 class="card-title">Publicación Revista Lugares</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-4 col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="/images/revistaLugares.jpg" alt="Card image cap">
-            <div class="card-block">
-              <h4 class="card-title">Publicación Revista Lugares</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-4 col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="/images/revistaLugares.jpg" alt="Card image cap">
-            <div class="card-block">
-              <h4 class="card-title">Publicación Revista Lugares</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div hidden id="opcion6" class="col-xs-12 col-lg-8 texto">
-        <h1 style="text-align: right; font-weight:bold;">Contacto</h1>
-        <form class="formulario2">
-          <div class="row">
-            <!-- <span>Nombre</span>  -->
-            <input type="text" class="campo" id="nombreInput" placeholder="Ingrese Nombre">
-          </div>
-
-          <div class="row">
-            <!-- <span>Apellido</span>  -->
-            <input type="text" class="campo" id="telefonoInput" placeholder="Ingrese Teléfono">
-          </div>
-
-          <div class="row">
-            <!-- <label for="email">Email</label> -->
-            <input type="email" class="campo" id="emailInput" placeholder="Ingrese Email">
-          </div>
-
-          <div class="row">
-            <!-- <span>Consulta</span>  -->
-            <textarea class="campo" id="consultaTextArea" placeholder="Ingrese consulta" rows="4"></textarea>
-          </div>
-          <div class="row">
-            <a href="" class="btn" data-toggle="modal" data-target="#actividad2Modal" target="_blank">Enviar</a>
-          </div>
-
-        </form>
-      </div>
-      <div hidden id="opcion7" class="row col-xs-12 col-lg-12">
-        <!-- <h1 style="text-align: right; font-weight:bold;"></h1> -->
-        <div class="text-center">
-          <img src="/images/mapa.jpg" class="img-rounded img-fluid" alt="Card image cap">
-          <div class="card-block">
-            <p class="card-text"></p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
-  <footer class="footer">
+
+  <div class="footer visible-lg">
     <div class="footer-container">
       <h4>TEL +549 11 3317/ 4858/+549 3773 408166/+54 3773 499413.</h4>
       <a href="http://">reservas@esterosdelibera.com</a>
     </div>
-  </footer>
-
   </div>
+
+  <div class="hidden-lg footer-mobile">
+    <div class="social-mobile">
+      <ul>
+        <li>
+          <a href="">
+            <i class="fa fa-facebook fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa fa-instagram fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa fa-tripadvisor fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 </body>
 
 
 
 <!-- build:js js/lib.js -->
+<!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/bower_components/ie10-viewport-bug-workaround/dist/ie10-viewport-bug-workaround.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/bower_components/angular-block-ui/dist/angular-block-ui.js"></script>
+<script src="/bower_components/ngmap/build/scripts/ng-map.js"></script>
 <script src="/bower_components/vegas/dist/vegas.min.js"></script>
-<script src="/bower_components/bigSlide/dist/bigSlide.min.js"></script>
+<script src="/bower_components/bigSlide/dist/bigSlide.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/app.js -->
+<!-- inject:js -->
+<script src="/src/client/env/prod.env.js"></script>
+<script src="/src/client/app/app.module.js"></script>
+<script src="/src/client/app/actividades/actividades.module.js"></script>
+<script src="/src/client/app/birdwatching/birdwatching.module.js"></script>
+<script src="/src/client/app/blocks/exception/exception.module.js"></script>
+<script src="/src/client/app/blocks/logger/logger.module.js"></script>
+<script src="/src/client/app/blocks/router/router.module.js"></script>
+<script src="/src/client/app/contacto/contacto.module.js"></script>
+<script src="/src/client/app/core/core.module.js"></script>
+<script src="/src/client/app/home/home.module.js"></script>
+<script src="/src/client/app/indicaciones/indicaciones.module.js"></script>
+<script src="/src/client/app/lodge/lodge.module.js"></script>
+<script src="/src/client/app/prensa/prensa.module.js"></script>
+<script src="/src/client/app/reserva/reserva.module.js"></script>
+<script src="/src/client/app/widgets/widgets.module.js"></script>
+<script src="/src/client/app/actividades/actividades.controller.js"></script>
+<script src="/src/client/app/actividades/actividades.route.js"></script>
+<script src="/src/client/app/birdwatching/birdwatchin.controller.js"></script>
+<script src="/src/client/app/birdwatching/birdwatching.route.js"></script>
+<script src="/src/client/app/blocks/exception/exception-handler.provider.js"></script>
+<script src="/src/client/app/blocks/exception/exception.js"></script>
+<script src="/src/client/app/blocks/logger/logger.js"></script>
+<script src="/src/client/app/blocks/router/router-helper.provider.js"></script>
+<script src="/src/client/app/contacto/contacto.controller.js"></script>
+<script src="/src/client/app/contacto/contacto.route.js"></script>
+<script src="/src/client/app/core/config.js"></script>
+<script src="/src/client/app/core/constants.js"></script>
+<script src="/src/client/app/core/core.route.js"></script>
+<script src="/src/client/app/core/run.js"></script>
+<script src="/src/client/app/core/services.js"></script>
+<script src="/src/client/app/home/home.controller.js"></script>
+<script src="/src/client/app/home/home.route.js"></script>
+<script src="/src/client/app/indicaciones/indicaciones.controller.js"></script>
+<script src="/src/client/app/indicaciones/indicaciones.route.js"></script>
+<script src="/src/client/app/lodge/lodge.controller.js"></script>
+<script src="/src/client/app/lodge/lodge.route.js"></script>
+<script src="/src/client/app/prensa/prensa.controller.js"></script>
+<script src="/src/client/app/prensa/prensa.route.js"></script>
+<script src="/src/client/app/reserva/reserva.controller.js"></script>
+<script src="/src/client/app/reserva/reserva.route.js"></script>
+<script src="/src/client/app/widgets/back_to_top/back-top-top.directive.js"></script>
+<!-- endinject -->
+
+<!-- inject:templates:js -->
+<!-- endinject -->
 <!-- endbuild -->
 
 <script type="text/javascript">
-  $(document).ready(function(){
+  $(document).ready(function () {
 
     $("body").vegas({
-    slides: [{
-        src: "/images/slider_9.png"
-      },
-      {
-        src: "/images/slider_2.jpg"
-      },
-      {
-        src: "/images/slider_4.png"
-      },
-      {
-        src: "/images/slider_6.jpg"
-      },
-      {
-        src: "/images/carpinchoInsta.jpg"
-      },
-      {
-        src: "/images/slider_5.png"
-      },
-      {
-        src: "/images/Ave2.jpg"
-      },
-      {
-        src: "/images/slider_8.jpg"
-      },
-      {
-        src: "/images/PosadaNoche.jpg"
-      }
-    ]
-  });
+      slides: [{
+          src: "/images/slider_9.png"
+        },
+        {
+          src: "/images/slider_2.jpg"
+        },
+        {
+          src: "/images/slider_4.png"
+        },
+        {
+          src: "/images/slider_6.jpg"
+        },
+        {
+          src: "/images/carpinchoInsta.jpg"
+        },
+        {
+          src: "/images/slider_5.png"
+        },
+        {
+          src: "/images/Ave2.jpg"
+        },
+        {
+          src: "/images/slider_8.jpg"
+        },
+        {
+          src: "/images/PosadaNoche.jpg"
+        }
+      ]
+    });
 
     $('.nav-lang').bigSlide({
       'menu': ('#nav-lang'),
@@ -338,6 +322,7 @@
       easyClose: true
     });
   });
+
 </script>
 </body>
 
