@@ -28,10 +28,10 @@
         <i class="fa fa-globe fa-2x"></i>
       </div>
       <div class="logo">
-        <a href="#">
-          <img class="" src="/images/logo.png" alt="Posada de la Laguna">
-        </a>
-      </div>
+          <a href="index.html">
+            <img class="" src="/images/logo.png" alt="Posada de la Laguna">
+          </a>
+        </div>
       <div class="social">
         <ul>
           <li>
@@ -136,29 +136,6 @@
 
 <script type="text/javascript">
   $(document).ready(function () {
-
-    $(".toggle-visibility").click(function () {
-
-      /*Esto debería mejorarse. Lo hago así para hacer rapido*/
-      $("#opcion1").hide();
-      $("#opcion2").hide();
-      $("#opcion3").hide();
-      $("#opcion4").hide();
-      $("#opcion5").hide();
-      $("#opcion6").hide();
-      $("#opcion7").hide();
-
-      var target_selector = $(this).attr('data-target');
-      var $target = $(target_selector);
-
-      if ($target.is(':hidden')) {
-        $target.show("slow");
-      } else {
-        $target.hide("slow");
-      }
-
-    });
-
     function centerModal() {
     $(this).css('display', 'block');
     var $dialog = $(this).find(".modal-dialog");
@@ -173,33 +150,30 @@
 
   $("body").vegas({
     slides: [{
-        src: "/images/slider_9.png"
+        src: "/images/lodge9.jpg"
       },
       {
-        src: "/images/slider_2.jpg"
+        src: "/images/lodge2.jpg"
       },
       {
-        src: "/images/slider_4.png"
+        src: "/images/lodge3b.jpg"
       },
       {
-        src: "/images/slider_6.jpg"
+        src: "/images/lodge4.jpg"
       },
       {
-        src: "/images/carpinchoInsta.jpg"
+        src: "/images/lodge5.jpg"
       },
       {
-        src: "/images/slider_5.png"
+        src: "/images/lodge6.jpg"
       },
       {
-        src: "/images/Ave2.jpg"
+        src: "/images/lodge8.jpg"
       },
       {
-        src: "/images/slider_8.jpg"
-      },
-      {
-        src: "/images/PosadaNoche.jpg"
+        src: "/images/lodge7.jpg"
       }
-    ]
+      ]
   });
 
 </script>
