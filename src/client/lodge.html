@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,74 +23,47 @@
 </head>
 
 <body>
-  <header class="header visible-lg">
-    <div class="header-container">
-      <div class="lang">
-        <i class="fa fa-globe fa-2x"></i>
-      </div>
-      <div class="logo">
-          <a href="index.html">
-            <img class="" src="/images/logo.png" alt="Posada de la Laguna">
-          </a>
-        </div>
-      <div class="social">
-        <ul>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        <ul class="nav navbar-nav">
           <li>
-            <a href="">
-              <i class="fa fa-facebook fa-2x"></i>
+            <a href="#" class="logo">
+              <img  src="/images/logo_blanco.png" alt="">
             </a>
           </li>
           <li>
-            <a href="">
-              <i class="fa fa-instagram fa-2x"></i>
+            <a href="lodge.html">Lodge
+              <!-- <span class="sr-only">(current)</span> -->
             </a>
           </li>
           <li>
-            <a href="">
-              <i class="fa fa-tripadvisor fa-2x"></i>
-            </a>
+            <a href="actividades.html">Actividades</a>
+          </li>
+          <li>
+            <a href="birdwatching.html">BirdWatching</a>
+          </li>
+          <li>
+            <a href="reserva.html">Reserva Natural</a>
+          </li>
+          <li>
+            <a href="prensa.html">Prensa</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="indicaciones.html">Cómo llegar</a>
           </li>
         </ul>
-      </div>
-    </div>
-  </header>
-  <nav class="menu navbar navbar-default">
-    <div class="container">
-
-      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-            <ul class="nav navbar-nav">
-                    <li>
-                      <a href="lodge.html">Lodge
-                        <!-- <span class="sr-only">(current)</span> -->
-                      </a>
-                    </li>
-                    <li>
-                      <a  href="actividades.html">Actividades</a>
-                    </li>
-                    <li>
-                      <a  href="birdwatching.html">BirdWatching</a>
-                    </li>
-                    <li>
-                      <a  href="reserva.html">Reserva Natural</a>
-                    </li>
-                    <li>
-                      <a  href="prensa.html">Prensa</a>
-                    </li>
-                    <li>
-                      <a  href="contacto.html">Contacto</a>
-                    </li>
-                    <li>
-                      <a  href="indicaciones.html">Cómo llegar</a>
-                    </li>
-                  </ul>
       </div>
       <!--/.nav-collapse -->
     </div>
     <!--/.container-fluid -->
   </nav>
 
-<div class="container">
-   <div class="row">
+  <div class="container">
+    <div class="row">
       <div id="opcion1" class="col-xs-12 col-lg-8 texto">
         <h1 style="text-align: right; font-weight:bold;">Lodge</h1>
         <p>Los invitamos a conocer Posada de la Laguna, donde podrán disfrutar de una ubicación privilegiada en un jardín de
@@ -102,9 +76,9 @@
           <a href="" class="btn" data-toggle="modal" data-target="#restaurantModal" target="_blank">Restaurant</a>
         </div>
       </div>
+    </div>
   </div>
-  </div>
-  
+
   <footer class="footer">
     <div class="footer-container">
       <h4>TEL +549 11 3317/ 4858/+549 3773 408166/+54 3773 499413.</h4>
@@ -114,16 +88,17 @@
 
 
   <div id="dormitoriosModal" class="modal fade" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div id="carouselDormitorios" class="carousel slide" data-ride="carousel">
-                <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="carouselDormitorios" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
             <div class="item active">
               <img class="img-responsive" src="/images/dormitorio1.jpg" alt="...">
               <div class="carousel-caption">
-                  Su gastronomía, el confort de sus dormitorios y la atención personalizada, todo supervisado por su dueña Elsa Güiraldes, agregan valor a su estadía en los Esteros del Iberá.
-             </div>
+                Su gastronomía, el confort de sus dormitorios y la atención personalizada, todo supervisado por su dueña Elsa Güiraldes,
+                agregan valor a su estadía en los Esteros del Iberá.
+              </div>
             </div>
             <div class="item">
               <img class="img-responsive" src="/images/dormitorio2.jpg" alt="...">
@@ -131,7 +106,7 @@
                 Texto
               </div>
             </div>
-              <div class="item">
+            <div class="item">
               <img class="img-responsive" src="/images/living-2.jpg" alt="...">
               <div class="carousel-caption">
                 Texto
@@ -140,52 +115,53 @@
           </div>
           <!-- Controls -->
           <a class="left carousel-control" href="#carouselDormitorios" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
           <a class="right carousel-control" href="#carouselDormitorios" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
-                      </div>
-              </div>
         </div>
-        </div>
-    <div id="restaurantModal" class="modal fade" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-              <div id="carouselRestaurant" class="carousel slide" data-ride="carousel">
-                  <!-- Wrapper for slides -->
+      </div>
+    </div>
+  </div>
+  <div id="restaurantModal" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="carouselRestaurant" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
           <div class="carousel-inner">
-              <div class="item active">
-                <img class="img-responsive" src="/images/restaurant2.jpg" alt="...">
-                <div class="carousel-caption">
-                    Su gastronomía, el confort de sus dormitorios y la atención personalizada, todo supervisado por su dueña Elsa Güiraldes, agregan valor a su estadía en los Esteros del Iberá.
-               </div>
-              </div>
-              <div class="item">
-                <img class="img-responsive" src="/images/restaurant1.jpg" alt="...">
-                <div class="carousel-caption">
-                  Texto
-                </div>
-              </div>
-                <div class="item">
-                <img class="img-responsive" src="/images/restaurant3.jpg" alt="...">
-                <div class="carousel-caption">
-                  Texto
-                </div>
+            <div class="item active">
+              <img class="img-responsive" src="/images/restaurant2.jpg" alt="...">
+              <div class="carousel-caption">
+                Su gastronomía, el confort de sus dormitorios y la atención personalizada, todo supervisado por su dueña Elsa Güiraldes,
+                agregan valor a su estadía en los Esteros del Iberá.
               </div>
             </div>
-             <!-- Controls -->
+            <div class="item">
+              <img class="img-responsive" src="/images/restaurant1.jpg" alt="...">
+              <div class="carousel-caption">
+                Texto
+              </div>
+            </div>
+            <div class="item">
+              <img class="img-responsive" src="/images/restaurant3.jpg" alt="...">
+              <div class="carousel-caption">
+                Texto
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
           <a class="left carousel-control" href="#carouselRestaurant" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
           <a class="right carousel-control" href="#carouselRestaurant" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
-                        </div>
-                </div>
-          </div>
-          </div>
         </div>
+      </div>
+    </div>
+  </div>
+  </div>
   </div>
 </body>
 
@@ -201,18 +177,18 @@
 <script type="text/javascript">
   $(document).ready(function () {
     function centerModal() {
-    $(this).css('display', 'block');
-    var $dialog = $(this).find(".modal-dialog");
-    var offset = ($(window).height() - $dialog.height()) / 2;
-    // Center modal vertically in window
-    $dialog.css("margin-top", offset);
+      $(this).css('display', 'block');
+      var $dialog = $(this).find(".modal-dialog");
+      var offset = ($(window).height() - $dialog.height()) / 2;
+      // Center modal vertically in window
+      $dialog.css("margin-top", offset);
     }
-    
-  $('.carousel').carousel({
-  interval: 2500
-  })
-  
-   
+
+    $('.carousel').carousel({
+      interval: 2500
+    })
+
+
   });
 
 
@@ -241,7 +217,7 @@
       {
         src: "/images/lodge7.jpg"
       }
-      ]
+    ]
   });
 
 </script>
