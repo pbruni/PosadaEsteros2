@@ -6,48 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Posada de La Laguna</title>
 
-
   <link rel="stylesheet" href="styles/lib-02810b508f.css">
 
-  <link rel="stylesheet" href="styles/app-a952ce2da1.css">
-
+  <link rel="stylesheet" href="styles/app-1f8d95d26f.css">
 
 </head>
 
 <body>
-   <nav class="navbar navbar-default">
-    <div class="container">
-      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="#" class="logo">
-              <img  src="images/logo_blanco.png" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="lodge.html">Lodge
-              <!-- <span class="sr-only">(current)</span> -->
-            </a>
-          </li>
-          <li>
-            <a href="actividades.html">Actividades</a>
-          </li>
-          <li>
-            <a href="birdwatching.html">BirdWatching</a>
-          </li>
-          <li>
-            <a href="reserva.html">Reserva Natural</a>
-          </li>
-          <li>
-            <a href="prensa.html">Prensa</a>
-          </li>
-          <li>
-            <a href="contacto.html">Contacto</a>
-          </li>
-          <li>
-            <a href="indicaciones.html">Cómo llegar</a>
-          </li>
-            <li>
+    <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a href="#" class="hidden-lg logo center-block">
+        <img src="/images/logo_blanco.png" alt="">
+      </a>
+      <button type="button" class="hidden-lg navbar-toggle center-block" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="visible-lg">
+          <a href="/index.html" class="logo">
+            <img src="/images/logo_blanco.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="lodge.html">Lodge
+            <!-- <span class="sr-only">(current)</span> -->
+          </a>
+        </li>
+        <li>
+          <a href="actividades.html">Actividades</a>
+        </li>
+        <li>
+          <a href="birdwatching.html">BirdWatching</a>
+        </li>
+        <li>
+          <a href="reserva.html">Reserva Natural</a>
+        </li>
+        <li>
+          <a href="prensa.html">Prensa</a>
+        </li>
+        <li>
+          <a href="contacto.html">Contacto</a>
+        </li>
+        <li>
+          <a href="indicaciones.html">Cómo llegar</a>
+        </li>
+           <li>
               <a style="border-bottom:1px dashed transparent !important;"href="">
                 <i class="fa fa-facebook fa-2x"></i>
               </a>
@@ -62,15 +73,13 @@
                 <i class="fa fa-tripadvisor fa-2x"></i>
               </a>
             </li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
+      </ul>
     </div>
-    <!--/.container-fluid -->
+    <!-- /.navbar-collapse -->
   </nav>
 
 <div class="container">
-  <div class="row col-xs-12 col-lg-12">
+  <div class="visible-lg row col-xs-12 col-lg-12">
       <div class="col-xs-6 col-lg-6 align-items-center" style="left:200px;padding-top:30px;">
           
           <a href="" class="btn" data-toggle="modal" data-target="#actividad1Modal" target="_blank">Cabalgatas</a>
@@ -96,7 +105,26 @@
           </p>
         </div>
   </div>
+  <div class="hidden-lg col-md-12 col-sm-12 text-center">
+    <h1 class="page-header">Actividades</h1>
+    <p class="lead">Muchas y muy variadas son las actividades que podrás desarrollar en Posada de la Laguna. </p>
+    <p class="lead">
+      Mágicos paseos en lancha por la laguna Iberá de día o a la luz de las estrellas, caminatas inolvidables, paseos en canoa
+      acompañado por el canto de los pájaros, diferentes cabalgatas atravesando esteros y palmares, o simplemente dedicarte
+      a descansar en una hamaca paraguaya o al borde de la pileta.
+    </p>
+    <p class="lead">Si sos amante de la flora y la fauna, este es el lugar ideal para visitar, seguramente lo que vas a ver superará todas
+      tus expectativas. Si te apasiona la fotografía, que llevaras tomas insuperables, por el entorno inigualable y la cantidad
+      de especies que habitan en los esteros
+    </p>
+    <div class="btns">
+      <a href="" class="btn" data-toggle="modal" data-target="#actividad1Modal" target="_blank">Cabalgatas</a>
+      <a href="" class="btn" data-toggle="modal" data-target="#actividad2Modal" target="_blank">Night Watching</a>
+      <a href="" class="btn" data-toggle="modal" data-target="#actividad3Modal" target="_blank">Talleres</a>
+    </div>
   </div>
+  </div>
+   
   <footer class="footer">
     <div class="footer-container">
       <h4>TEL +549 11 3317/ 4858/+549 3773 408166/+54 3773 499413.</h4>
@@ -117,9 +145,9 @@
   </div>
 </body>
 
-<script src="js/lib-cfe5b60ea5.js"></script>
 
-<script src="js/app-5df38737e8.js"></script>
+
+<script src="js/lib-8cb8bf7d71.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function () {
@@ -160,31 +188,31 @@
 
   $("body").vegas({
     slides: [{
-        src: "images/Actividad.jpg"
+        src: "/images/Actividad.jpg"
       },
       {
-        src: "images/agua.jpg"
+        src: "/images/agua.jpg"
       },
       {
-        src: "images/actividad2.jpg"
+        src: "/images/actividad2.jpg"
       },
       {
-        src: "images/actividad3.jpg"
+        src: "/images/actividad3.jpg"
       },
       {
-        src: "images/actividad4.jpg"
+        src: "/images/actividad4.jpg"
       },
       {
-        src: "images/actividad5.jpg"
+        src: "/images/actividad5.jpg"
       },
       {
-        src: "images/actividad6.jpg"
+        src: "/images/actividad6.jpg"
       },
       {
-        src: "images/slider_8.jpg"
+        src: "/images/slider_8.jpg"
       },
       {
-        src: "images/PosadaNoche.jpg"
+        src: "/images/PosadaNoche.jpg"
       }
     ]
   });
