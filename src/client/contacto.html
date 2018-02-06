@@ -22,63 +22,73 @@
 </head>
 
 <body>
- <nav class="navbar navbar-default">
-    <div class="container">
-      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="#" class="logo">
-              <img  src="/images/logo_blanco.png" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="lodge.html">Lodge
-              <!-- <span class="sr-only">(current)</span> -->
-            </a>
-          </li>
-          <li>
-            <a href="actividades.html">Actividades</a>
-          </li>
-          <li>
-            <a href="birdwatching.html">BirdWatching</a>
-          </li>
-          <li>
-            <a href="reserva.html">Reserva Natural</a>
-          </li>
-          <li>
-            <a href="prensa.html">Prensa</a>
-          </li>
-          <li>
-            <a href="contacto.html">Contacto</a>
-          </li>
-          <li>
-            <a href="indicaciones.html">Cómo llegar</a>
-          </li>
-            <li>
-              <a href="">
+   <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a href="#" class="hidden-lg logo center-block">
+        <img src="/images/logo_blanco.png" alt="">
+      </a>
+      <button type="button" class="hidden-lg navbar-toggle center-block" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="visible-lg">
+          <a href="/index.html" class="logo">
+            <img src="/images/logo_blanco.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="lodge.html">Lodge
+            <!-- <span class="sr-only">(current)</span> -->
+          </a>
+        </li>
+        <li>
+          <a href="actividades.html">Actividades</a>
+        </li>
+        <li>
+          <a href="birdwatching.html">BirdWatching</a>
+        </li>
+        <li>
+          <a href="reserva.html">Reserva Natural</a>
+        </li>
+        <li>
+          <a href="prensa.html">Prensa</a>
+        </li>
+        <li>
+          <a href="contacto.html">Contacto</a>
+        </li>
+        <li>
+          <a href="indicaciones.html">Cómo llegar</a>
+        </li>
+           <li>
+              <a style="border-bottom:1px dashed transparent !important;"href="">
                 <i class="fa fa-facebook fa-2x"></i>
               </a>
             </li>
             <li>
-              <a href="">
+              <a style="border-bottom:1px dashed transparent !important;"href="">
                 <i class="fa fa-instagram fa-2x"></i>
               </a>
             </li>
             <li>
-              <a href="">
+              <a style="border-bottom:1px dashed transparent !important;"href="">
                 <i class="fa fa-tripadvisor fa-2x"></i>
               </a>
             </li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
+      </ul>
     </div>
-    <!--/.container-fluid -->
+    <!-- /.navbar-collapse -->
   </nav>
 
-
 <div class="container">
-   <div class="row">
+   <div class="row visible-lg">
       <div id="opcion6" class="col-xs-12 col-lg-8 texto">
         <h1 style="text-align: right; font-weight:bold;">Contacto</h1>
         <form class="formulario2">
@@ -110,6 +120,34 @@
       
     </div>
   </div>
+   <div class="hidden-lg col-md-12 col-sm-12 text-center">
+      <h1 class="page-header">Contacto</h1>
+      <form class="formulario2">
+          <div class="row">
+            <!-- <span>Nombre</span>  -->
+            <input type="text" class="campo" id="nombreInput" placeholder="Ingrese Nombre">
+          </div>
+    
+          <div class="row">
+            <!-- <span>Apellido</span>  -->
+            <input type="text" class="campo" id="telefonoInput" placeholder="Ingrese Teléfono">
+          </div>
+    
+          <div class="row">
+            <!-- <label for="email">Email</label> -->
+            <input type="email" class="campo" id="emailInput" placeholder="Ingrese Email">
+          </div>
+    
+          <div class="row">
+            <!-- <span>Consulta</span>  -->
+            <textarea class="campo" id="consultaTextArea" placeholder="Ingrese consulta" rows="4"></textarea>
+          </div>
+          <div class="row">
+            <a href="" class="btn" data-toggle="modal" data-target="#actividad2Modal" target="_blank">Enviar</a>
+          </div>
+    
+        </form>
+    </div>
   <footer class="footer">
     <div class="footer-container">
       <h4>TEL +549 11 3317/ 4858/+549 3773 408166/+54 3773 499413.</h4>
