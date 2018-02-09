@@ -1,0 +1,14 @@
+{
+  "load.partial.contacto": {
+    "HEADLINE": "Contact",
+    "FORM_NAME": "Name",
+    "FORM_TELEPHONE": "Telephone",
+    "FORM_EMAIL": "Email",
+    "FORM_QUESTION": "Message",
+    "BUTTON_SEND": "Send",
+    "SUBTITLE": "Reservations",
+    "PhoneAbroad_Title":"From Abroad",
+    "PhoneArg_Title":"From Argentina",
+    "Coordenadas":"GPS"
+  }
+}
