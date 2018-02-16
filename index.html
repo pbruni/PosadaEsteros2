@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <base href="/">
+  
+  <title>Posada de La Laguna</title>
+
+  <link rel="stylesheet" href="styles/lib-02810b508f.css">
+
+  <link rel="stylesheet" href="styles/app-e0231b7e0d.css">
+
+</head>
+
+<body ng-controller="MenuController as vm">
+
+  <header class="navbar navbar-default navbar-inner">
+    <nav class="navbar navbar-default" role="navigation">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header hidden-md hidden-lg text-center">
+        <a href="/index" class=" logo ">
+          <img src="images/logo.png" alt="">
+        </a>
+        <button type="button" class="navbar-toggle" ng-click="vm.colapse()">
+          <span class="sr-only">Desplegar navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" uib-collapse="vm.isNavCollapsed">
+        <ul class="nav navbar-nav">
+          <li class="visible-md visible-lg">
+            <a href="/index" class="logo" ng-click="vm.colapse()">
+              <img src="images/logo.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a ui-sref="lodge" href="lodge" ng-click="vm.colapse()">{{'menu.ITEM_1' | translate}}</a>
+          </li>
+          <li>
+            <a ui-sref="actividades" href="actividades" ng-click="vm.colapse()">{{'menu.ITEM_2' | translate}}</a>
+          </li>
+          <li>
+            <a ui-sref="birdwatching" href="birdwatching" ng-click="vm.colapse()">{{'menu.ITEM_3' | translate}}</a>
+          </li>
+          <li>
+            <a ui-sref="reserva" href="reserva" ng-click="vm.colapse()">{{'menu.ITEM_4' | translate}}</a>
+          </li>
+          <li>
+            <a ui-sref="prensa" href="prensa" ng-click="vm.colapse()">{{'menu.ITEM_5' | translate}}</a>
+          </li>
+          <li>
+            <a ui-sref="contacto" href="contacto" ng-click="vm.colapse()">{{'menu.ITEM_6' | translate}}</a>
+          </li>
+          <li>
+            <a ui-sref="indicaciones" href="indicaciones" ng-click="vm.colapse()">{{'menu.ITEM_7' | translate}}</a>
+          </li>
+          <li>
+            <a style="float:left" href="#" ng-click="vm.changeLang('es')">
+              <img src="images/es.svg" width="14px" height="14px" alt="">
+            </a>
+            <a style="float:left" href="#" ng-click="vm.changeLang('en')">
+              <img src="images/us.svg" width="14px" height="14px" alt="">
+            </a>
+            <a style="float:left" href="#" ng-click="vm.changeLang('')">
+              <img src="images/fr.svg" width="14px" height="14px" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+  </header>
+
+  <div class="main container visible-md visible-lg" ui-view >
+  </div>
+
+  <div class="main-mobile container hidden-md hidden-lg" ui-view>
+  </div>
+
+  <div class="footer">
+     <div class="text-center contact">
+      <span><strong>{{'menu.FOOTER_TEL' | translate}}</strong> +549 3773 408166 /+54 9 11  33174861 <strong>Argentina: </strong>03773 499413-03773 / 15408166 </span>
+      <a href="http://">reservas@esterosdelibera.com</a>
+      <a href="">
+        <i class="fa fa-facebook fa-lg"></i>
+      </a>
+      <a href="">
+        <i class="fa fa-instagram fa-lg"></i>
+      </a>
+      <a href="">
+        <i class="fa fa-tripadvisor fa-lg"></i>
+      </a>
+    </div>
+  </div>
+
+</body>
+
+
+
+<script src="js/lib-c78957ce09.js"></script>
+
+<script src="js/app-c43ae18e15.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('body').vegas({
+      slides: [{
+        src: "images/slider_9.png"
+      },
+      {
+        src: "images/slider_2.jpg"
+      },
+       {
+        src: "images/slider_6.jpg"
+      }, 
+      {
+        src: "images/slide_4.jpg"
+      },
+       {
+        src: "images/slider_5.png"
+      }, 
+      {
+        src: "images/prensa.jpg"
+      }, 
+      {
+        src: "images/slider_8.jpg"
+      }, 
+      {
+        src: "images/slider_3.jpg"
+      }]
+    }).vegas('play');
+  });
+
+</script>
+</body>
+
+</html>
